@@ -6,7 +6,7 @@ const useStartWorkflow = (workflowId) => {
     const startWorkflow = useCallback(
         async (variables = {}) => {
             if (!workflowId) {
-                console.error('No maestroWorkflowId found in card configuration');
+                console.error('No workflowID passed!');
                 return false;
             }
 
